@@ -12,6 +12,8 @@ public class DoomConfig {
 	@Configurable
 	public boolean enable_weaponsmith_trades = true;
 	@Configurable
+	public boolean enable_fire_weapons = true;
+	@Configurable
 	public boolean enable_toolsmith_trades = true;
 	@Configurable
 	public boolean enable_mason_trades = true;

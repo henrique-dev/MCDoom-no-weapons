@@ -14,7 +14,7 @@ import net.minecraft.world.item.Items;
 public class DoomVillagerTrades {
 
 	public static void addTrades() {
-		if (DoomMod.config.enable_weaponsmith_trades) {
+		if (DoomMod.config.enable_weaponsmith_trades && DoomMod.config.enable_fire_weapons) {
 			final var weapon_trades = new ArrayList<>(Arrays.asList(VillagerTrades.TRADES.get(VillagerProfession.WEAPONSMITH).get(3)));
 			final var result = new ItemListing[] {};
 			weapon_trades.add(new VillagerTrades.ItemsAndEmeraldsToItems(Items.EMERALD, 1, 1, DoomItems.ARGENT_ENERGY, 6, 12, 5));

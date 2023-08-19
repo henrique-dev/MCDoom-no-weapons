@@ -24,7 +24,7 @@ public class GunCraftingRender extends GeoBlockRenderer<GunBlockEntity> {
 			@Override
 			protected ItemStack getStackForBone(GeoBone bone, GunBlockEntity animatable) {
 				return switch (bone.getName()) {
-				case "gun" -> new ItemStack(DoomItems.PISTOL);
+				case "gun" -> new ItemStack(DoomItems.ARGENT_SWORD);
 				default -> null;
 				};
 			}

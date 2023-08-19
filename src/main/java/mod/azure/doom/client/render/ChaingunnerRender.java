@@ -25,7 +25,7 @@ public class ChaingunnerRender extends GeoEntityRenderer<ChaingunnerEntity> {
 			@Override
 			protected ItemStack getStackForBone(GeoBone bone, ChaingunnerEntity animatable) {
 				return switch (bone.getName()) {
-				case "bipedLeftArm_1" -> new ItemStack(DoomItems.CHAINGUN);
+				case "bipedLeftArm_1" -> new ItemStack(DoomItems.ARGENT_SWORD);
 				default -> null;
 				};
 			}

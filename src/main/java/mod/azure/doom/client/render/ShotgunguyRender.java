@@ -25,7 +25,7 @@ public class ShotgunguyRender extends GeoEntityRenderer<ShotgunguyEntity> {
 			@Override
 			protected ItemStack getStackForBone(GeoBone bone, ShotgunguyEntity animatable) {
 				return switch (bone.getName()) {
-				case "bipedLeftArm_1" -> new ItemStack(DoomItems.SG);
+				case "bipedLeftArm_1" -> new ItemStack(DoomItems.ARGENT_SWORD);
 				default -> null;
 				};
 			}

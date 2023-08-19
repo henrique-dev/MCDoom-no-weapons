@@ -8,14 +8,14 @@ import mod.azure.doom.DoomMod;
 import mod.azure.doom.item.ArgentEnergyItem;
 import mod.azure.doom.item.ArgentPlateItem;
 import mod.azure.doom.item.UnopenedItem;
-import mod.azure.doom.item.ammo.ArgentBolt;
-import mod.azure.doom.item.ammo.BFGCell;
-import mod.azure.doom.item.ammo.ChaingunAmmo;
-import mod.azure.doom.item.ammo.ClipAmmo;
-import mod.azure.doom.item.ammo.EnergyCell;
-import mod.azure.doom.item.ammo.Rocket;
-import mod.azure.doom.item.ammo.ShellAmmo;
-import mod.azure.doom.item.ammo.UnmaykrBolt;
+import mod.azure.doom.item.ammo.ArgentBolt; // FIRE WEAPON
+import mod.azure.doom.item.ammo.BFGCell; // FIRE WEAPON
+import mod.azure.doom.item.ammo.ChaingunAmmo; // FIRE WEAPON
+import mod.azure.doom.item.ammo.ClipAmmo; // FIRE WEAPON
+import mod.azure.doom.item.ammo.EnergyCell; // FIRE WEAPON
+import mod.azure.doom.item.ammo.Rocket; // FIRE WEAPON
+import mod.azure.doom.item.ammo.ShellAmmo; // FIRE WEAPON
+import mod.azure.doom.item.ammo.UnmaykrBolt; // FIRE WEAPON
 import mod.azure.doom.item.armor.AstroDoomArmor;
 import mod.azure.doom.item.armor.BronzeDoomArmor;
 import mod.azure.doom.item.armor.ClassicBronzeDoomArmor;
@@ -58,28 +58,28 @@ import mod.azure.doom.item.tools.ArgentPaxel;
 import mod.azure.doom.item.tools.ArgentPickaxe;
 import mod.azure.doom.item.tools.ArgentShovel;
 import mod.azure.doom.item.weapons.ArgentSword;
-import mod.azure.doom.item.weapons.AxeMarauderItem;
-import mod.azure.doom.item.weapons.BFG;
-import mod.azure.doom.item.weapons.BFG9000;
-import mod.azure.doom.item.weapons.Ballista;
-import mod.azure.doom.item.weapons.Chaingun;
-import mod.azure.doom.item.weapons.Chainsaw;
-import mod.azure.doom.item.weapons.ChainsawAnimated;
-import mod.azure.doom.item.weapons.DGauss;
-import mod.azure.doom.item.weapons.DPlasmaRifle;
-import mod.azure.doom.item.weapons.DShotgun;
-import mod.azure.doom.item.weapons.DarkLordCrucibleItem;
-import mod.azure.doom.item.weapons.GrenadeItem;
-import mod.azure.doom.item.weapons.HeavyCannon;
-import mod.azure.doom.item.weapons.PistolItem;
-import mod.azure.doom.item.weapons.PlasmaGun;
-import mod.azure.doom.item.weapons.RocketLauncher;
-import mod.azure.doom.item.weapons.SentinelHammerItem;
-import mod.azure.doom.item.weapons.Shotgun;
-import mod.azure.doom.item.weapons.SuperShotgun;
-import mod.azure.doom.item.weapons.SwordCrucibleItem;
-import mod.azure.doom.item.weapons.Unmaker;
-import mod.azure.doom.item.weapons.Unmaykr;
+import mod.azure.doom.item.weapons.AxeMarauderItem; // FIRE WEAPON
+import mod.azure.doom.item.weapons.BFG; // FIRE WEAPON
+import mod.azure.doom.item.weapons.BFG9000; // FIRE WEAPON
+import mod.azure.doom.item.weapons.Ballista; // FIRE WEAPON
+import mod.azure.doom.item.weapons.Chaingun; // FIRE WEAPON
+import mod.azure.doom.item.weapons.Chainsaw; // FIRE WEAPON
+import mod.azure.doom.item.weapons.ChainsawAnimated; // FIRE WEAPON
+import mod.azure.doom.item.weapons.DGauss; // FIRE WEAPON
+import mod.azure.doom.item.weapons.DPlasmaRifle; // FIRE WEAPON
+import mod.azure.doom.item.weapons.DShotgun; // FIRE WEAPON
+import mod.azure.doom.item.weapons.DarkLordCrucibleItem; // FIRE WEAPON
+import mod.azure.doom.item.weapons.GrenadeItem; // FIRE WEAPON
+import mod.azure.doom.item.weapons.HeavyCannon; // FIRE WEAPON
+import mod.azure.doom.item.weapons.PistolItem; // FIRE WEAPON
+import mod.azure.doom.item.weapons.PlasmaGun; // FIRE WEAPON
+import mod.azure.doom.item.weapons.RocketLauncher; // FIRE WEAPON
+import mod.azure.doom.item.weapons.SentinelHammerItem; // FIRE WEAPON
+import mod.azure.doom.item.weapons.Shotgun; // FIRE WEAPON
+import mod.azure.doom.item.weapons.SuperShotgun; // FIRE WEAPON
+import mod.azure.doom.item.weapons.SwordCrucibleItem; // FIRE WEAPON
+import mod.azure.doom.item.weapons.Unmaker; // FIRE WEAPON
+import mod.azure.doom.item.weapons.Unmaykr; // FIRE WEAPON
 import mod.azure.doom.util.enums.DAMat;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -297,7 +297,7 @@ public class DoomItems {
 	public static DarkLordArmor DARKLORD_LEGGINGS;
 	public static DarkLordArmor DARKLORD_BOOTS;
 
-	static <T extends Item> T item(String id, T c) {
+	static <T extends Item> T item(String id, T c) {		
 		Registry.register(BuiltInRegistries.ITEM, DoomMod.modResource(id), c);
 		return c;
 	}
@@ -330,38 +330,39 @@ public class DoomItems {
 		UNMAKER = item("unmaker", new Unmaker("demon"));
 		CHAINSAW64 = item("chainsaw64", new Chainsaw());
 		PLASMAGUN = item("plasmagun", new PlasmaGun());
-		ARGENT_AXE = item("argent_axe", new ArgentAxe());
-		ARGENT_HOE = item("argent_hoe", new ArgentHoe());
 		SSG = item("supershotgun", new SuperShotgun());
-		SOULCUBE = item("soulcube", new SoulCubeItem());
-		MEGA = item("megasphere", new MegaSphereItem());
 		GRENADE = item("doomed_grenade", new GrenadeItem());
 		HEAVYCANNON = item("heavycannon", new HeavyCannon());
-		ICON_ICON = item("icon_icon", new Item(new Item.Properties()));
 		ARGENT_BOLT = item("argent_bolt", new ArgentBolt());
-		ARGENT_PAXEL = item("argent_paxel", new ArgentPaxel());
-		ARGENT_SWORD = item("argent_sword", new ArgentSword());
-		POWER = item("powersphere", new PowerSphereItem());
-		GAS_BARREL = item("gas_barrel", new Item(new Item.Properties()));
 		ENERGY_CELLS = item("energy_cells", new EnergyCell());
-		ARGENT_SHOVEL = item("argent_shovel", new ArgentShovel());
 		SHOTGUN_SHELLS = item("shotgun_shells", new ShellAmmo());
 		UNMAKRY_BOLT = item("unmaykr_bolt", new UnmaykrBolt());
-		AXE_CLOSED = item("axe_marauder_closed", new UnopenedItem());
-		ARGENT_PICKAXE = item("argent_pickaxe", new ArgentPickaxe());
-		ARGENT_PLATE = item("argent_plate", new ArgentPlateItem());
 		AXE_OPEN = item("axe_marauder_open", new AxeMarauderItem());
 		DPLASMARIFLE = item("doomed_plasma_rifle", new DPlasmaRifle());
-		SWORD_CLOSED = item("cruciblesword_closed", new UnopenedItem());
 		ROCKETLAUNCHER = item("rocketlauncher", new RocketLauncher());
-		ARGENT_ENERGY = item("argent_energy", new ArgentEnergyItem());
-		INMORTAL = item("inmortalsphere", new InmortalSphereItem());
 		CHAINGUN_BULLETS = item("chaingunbullets", new ChaingunAmmo());
 		CRUCIBLESWORD = item("cruciblesword", new SwordCrucibleItem());
-		INVISIBLE = item("invisiblesphere", new InvisibleSphereItem());
 		CHAINSAW_ETERNAL = item("chainsaweternal", new ChainsawAnimated());
 		SENTINELHAMMER = item("sentinelhammer", new SentinelHammerItem());
 		DARKLORDCRUCIBLE = item("darklordcrucible", new DarkLordCrucibleItem());
+
+		ARGENT_AXE = item("argent_axe", new ArgentAxe());
+		ARGENT_HOE = item("argent_hoe", new ArgentHoe());		
+		SOULCUBE = item("soulcube", new SoulCubeItem());
+		MEGA = item("megasphere", new MegaSphereItem());		
+		ICON_ICON = item("icon_icon", new Item(new Item.Properties()));		
+		ARGENT_PAXEL = item("argent_paxel", new ArgentPaxel());
+		ARGENT_SWORD = item("argent_sword", new ArgentSword());
+		POWER = item("powersphere", new PowerSphereItem());
+		GAS_BARREL = item("gas_barrel", new Item(new Item.Properties()));		
+		ARGENT_SHOVEL = item("argent_shovel", new ArgentShovel());		
+		AXE_CLOSED = item("axe_marauder_closed", new UnopenedItem());
+		ARGENT_PICKAXE = item("argent_pickaxe", new ArgentPickaxe());
+		ARGENT_PLATE = item("argent_plate", new ArgentPlateItem());		
+		SWORD_CLOSED = item("cruciblesword_closed", new UnopenedItem());		
+		ARGENT_ENERGY = item("argent_energy", new ArgentEnergyItem());
+		INMORTAL = item("inmortalsphere", new InmortalSphereItem());		
+		INVISIBLE = item("invisiblesphere", new InvisibleSphereItem());		
 		E1M1_MUSIC_DISC = item("e1m1_music_disc", new RecordItem(166, DoomSounds.E1M1, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 60));
 		GEOF_MUSIC_DISC = item("netherambient_geoffplaysguitar_music_disc", new RecordItem(167, DoomSounds.NETHERAMBIENT_GEOFFPLAYSGUITAR, new Item.Properties().stacksTo(1).rarity(Rarity.RARE), 60));
 	}

@@ -6,10 +6,6 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "doom:energy_cells"
-				},
-				{
-					"type": "minecraft:item",
 					"name": "minecraft:netherite_scrap",
 					"functions": [
 						{

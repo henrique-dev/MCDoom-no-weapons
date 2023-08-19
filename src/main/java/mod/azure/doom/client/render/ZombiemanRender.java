@@ -25,7 +25,7 @@ public class ZombiemanRender extends GeoEntityRenderer<ZombiemanEntity> {
 			@Override
 			protected ItemStack getStackForBone(GeoBone bone, ZombiemanEntity animatable) {
 				return switch (bone.getName()) {
-				case "bipedLeftArm_1" -> new ItemStack(DoomItems.PISTOL);
+				case "bipedLeftArm_1" -> new ItemStack(DoomItems.ARGENT_SWORD);
 				default -> null;
 				};
 			}

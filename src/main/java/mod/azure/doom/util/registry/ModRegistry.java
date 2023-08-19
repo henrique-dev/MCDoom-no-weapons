@@ -42,7 +42,7 @@ public class ModRegistry {
 		AzureLib.initialize();
 		PacketHandler.registerMessages();
 		DoomStructures.registerStructureFeatures();
-		if (DoomMod.config.enable_all_villager_trades)
+		if (DoomMod.config.enable_all_villager_trades && DoomMod.config.enable_fire_weapons)
 			ServerLifecycleEvents.SERVER_STARTED.register(minecraftServer -> DoomVillagerTrades.addTrades());
 		LootTableEvents.MODIFY.register((resourceManager, lootManager, id, supplier, setter) -> {
 			if (DoomLoot.BASTION_BRIDGE.equals(id) || DoomLoot.BASTION_HOGLIN_STABLE.equals(id) || DoomLoot.BASTION_OTHER.equals(id) || DoomLoot.BASTION_TREASURE.equals(id) || DoomLoot.NETHER_BRIDGE.equals(id) || DoomLoot.RUINED_PORTAL.equals(id) || DoomLoot.SPAWN_BONUS_CHEST.equals(id)) {
